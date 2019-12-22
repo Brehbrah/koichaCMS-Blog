@@ -3,7 +3,6 @@
     class Users extends Controller {
         public function __construct() {
             $this -> userModel = $this -> model('User');
-            
         }
 
         public function register() {
@@ -66,6 +65,7 @@
 
                     // Call the model function by register user
                     if($this -> userModel -> register($data)) {
+                        flashMsg('register_success', 'You are registered and can log in');
                         redirect('users/login');
                     } else {
                         die('Something went wrong!');
