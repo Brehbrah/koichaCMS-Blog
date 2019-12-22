@@ -5,6 +5,11 @@
     }
     
     public function index(){
+
+      if(isLoggedIn()) {
+        redirect('posts');
+      }
+
       $data = [
         'title' => 'Koicha Website',
         'description' => 'Simple social network built on the TraversyMVC PHP framework'
