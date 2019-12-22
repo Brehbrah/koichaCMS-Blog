@@ -14,7 +14,7 @@
     <div class="card card-body mb-3">
       <h4 class="card-title"><?php echo $post -> title; ?></h4>
       <div class="bg-light p-2 mb-3">
-        Written by <?php echo $post -> name; ?> on <?php echo $post -> postCreated; ?>
+        <?php echo $post -> name; ?> <i class="fa fa-clock-o"></i> <?php echo $post -> postCreated; ?>
       </div>
       <p class="card-text"><?php echo $post ->body; ?></p>
       <a href="<?php echo URLROOT; ?>/posts/show/<?php echo $post -> postID; ?>" class="btn btn-dark">More</a>
