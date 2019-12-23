@@ -1,13 +1,13 @@
 <?php
   class Pages extends Controller {
     public function __construct(){
-     
+     $this -> db = new Database;
     }
     
     public function index(){
 
       if(isLoggedIn()) {
-        redirect('posts');
+        //redirect('posts');
       }
 
       $data = [
@@ -15,7 +15,7 @@
         'description' => 'Simple social network built on the TraversyMVC PHP framework'
       ];
      
-      $this->view('pages/index', $data);
+      $this -> view('pages/index', $data);
     }
 
     public function about(){
