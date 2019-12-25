@@ -17,7 +17,7 @@
       <?php if(isset($_SESSION['user_id'])) :  ?>
         <li class="nav-item">
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" style="cursor: pointer;" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-user"></i> Profile
         </a>
